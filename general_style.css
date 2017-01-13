@@ -1,0 +1,103 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+textarea{
+    width: 73vw;
+    height: 33vh;
+    resize: none;
+}
+.row{
+    margin:0;
+    background-color: #cccccc;
+}
+
+h1{
+    color: white;
+    margin: 0;
+    font-size: 35pt;
+    float: left;
+}
+
+div#socials{
+    float:right;
+}
+
+#socials img{
+    width:40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.col-md-3 h2{
+    color: white;
+}
+header{
+    background-color: black;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.col-md-3{
+    background-color: rgb(23, 23, 23);
+}
+
+.btn{
+     width:200px;
+     height:50px;
+     margin-right: 1em;
+}
+
+.btn-success{
+    background-color: #368036;
+}
+
+.panel-default>.panel-heading{
+    color: #fff;
+    background-color: #368036;
+    border-color: #398439;
+}
+
+.panel-group .panel{
+    border: 0;
+}
+
+.panel-title, .btn{
+    font-size: 20px;
+}
+
+form{
+    position: fixed;
+}
+.col-md-3, .col-md-9{
+    margin-top: 5em;
+}
+
+@media screen and (max-width:1370px){
+    body{
+        overflow-y: scroll;
+    }
+    h2{
+        font-size: 15pt;  
+    }
+    h1{
+        font-size: 20pt;
+    }
+    textarea{
+        width: 72vw;
+        height: 27vh;
+    }
+    .panel-title, .btn {
+        font-size: 15px;
+    }
+    .col-md-3, .col-md-9{
+        margin-top: 5em;
+    }
+    .col-md-3{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

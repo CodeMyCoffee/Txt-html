@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TXT-HTML</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="general_style.css">
+    <script src="general_main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>TXT-HTML</h1>
+        <div id="socials">
+            <a href="github.com/frajogusa"><img src="img/github.png" alt="GitHub"></a>
+            <a href="https://es.linkedin.com/in/francisco-gutierrez"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/codemycoffee"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="mailto:frajogusa@gmail.com"><img src="img/gmail.png" alt="Gmail"></a>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="top-side">
+                    <h2>Instructions(Video coming soon)</h2>
+                    <div id="top-content">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Format your TXT with some simple symbols and get a fully functional HTML for your page!
+                                It is highly recommended to have bootstrap if you want to benefit from the predefined classes provided in the default conversion.
+                                Watch the video for detailed instructions, and feel free to ask any questions or suggestions in any social media
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" style="width:100%">
+                        Text input demo
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Input demo</h4>
+                                </div>
+                                <div class="modal-body">
+                                    {This is a title}<br>
+                                    this is another random content with stuff CH2<br>
+                                    next line is a centered image with a footer<br>
+                                    @https://goo.gl/gdljno (img footer example)<br>
+                                    next line is a example of a list with another nested list inside<br>
+                                    #list1<br>
+                                    item1<br>
+                                    #item2<br>
+                                    item 2.1<br>
+                                    item 2.2<br>
+                                    /#<br>
+                                    item3<br>
+                                    /#<br>
+                                    {This is a nother title}<br>
+                                    now this is more content, and a right image example and then a left image example<br>
+                                    @rhttps://goo.gl/gdljno (img footer example)<br>
+                                    with multiple line breaks<br>
+                                    @lhttps://goo.gl/gdljno (img footer example)<br>
+                                    and stuff alpha E.coli, in the next line we have a table example<br>
+                                    &lt;t&gt;<br>
+                                    T1	T2	T3<br>
+                                    Liuh	Liuh	Luih<br>
+                                    Al	Al	Al<br>
+                                    &lt;/t&gt;<br>
+                                    you can add a button in a new line like so<br>
+                                    ¬button path:https://goo.gl/gdljno<br>
+                                    or you can add some links like this [this is a link path:https://goo.gl/gdljno] and it can be anywhere in the text
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div id="bot-side">
+                    <h2>Reference</h2>
+                    <div id="items_list">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Titles
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    First line of each section MUST be a title<br>
+                                    Then in a new line insert the content of that section<br>
+                                    Dont leave a blank line, and start the document always with a title<br>
+                                    eg: {THIS IS A TITLE}
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Links
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Can be anywhere in a line<br> Start with [ and then add the text of the link<br> on the same line add
+                                    a space and path:http.....<br> and a ] at the end of the path<br> eg: [this is a link path:https://goo.gl/gdljno]
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lists
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    First item of a list MUST start with #<br> Consecuent items MUST be in a single line<br> You can nest
+                                    list by starting another #<br> Close the list with /# in a single line
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Tables
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    Start with a single line &lt;t&gt;<br> Mark the table header with a th in the beggining<br> Separate
+                                    column elements with a TAB<br> Close the table with &lt;/t&gt;<br> REMEMBER TO CLOSE THE TABLE
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Buttons
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    MUST be alone in a single line<br> Start with ¬ and then add the text of the button<br> on the same line
+                                    add a space and path:http.....<br> eg: ¬button path:https://goo.gl/gdljno
+                                </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Images
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    MUST be alone in a single line<br> @ for full width img<br> @l left side img position<br>@r right side img position<br>
+                                    You can add a footer to the image by using ()<br> eg: @https://goo.gl/gdljno (this is the image footer)
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <form>
+                    <h2>Input</h2>
+                    <textarea id="input"></textarea>
+                    <br/><br/>
+                    <h2>Output</h2>
+                    <textarea id="output"></textarea>
+                    <br/><br/>
+                    <button class="btn btn-success" type="button" value="Convert" onclick="convert()">
+                            Convert
+                        </button>
+                        <button class="btn btn-success" type="button" value="Convert" onclick="reload_page()" >
+                    Reset
+                </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script>
+    $(document).ready(function(){
+        var wh = $(document).height();
+        var ww = $(document).width();
+        $(".col-md-3").css({"height":wh-67});
+    });
+</script>
+
+</html>

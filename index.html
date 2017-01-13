@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TXT-HTML</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="mainContainer" class="row">
+        <div id="darken"></div>
+        <div id="gitlink">
+            <p>Get the source code!</p>
+            <a href="https://github.com/frajogusa/frajogusa-txt_to_html.github.io"><img src="img/github.png" alt="Not found"></a>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <div id="centered">
+                <h1>Txt to HTML conversor</h1>
+                <h3>Chose your team and get started!</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="upv-team.html">IGEM UPV team</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="general-team.html">IGEM team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    //get width and height of the document to set the sizes
+    $(document).ready(function(){
+        var wh = $(document).height();
+        var ww = $(document).width();
+        $("#mainContainer").css({"height":wh,"width":ww});
+        $("#darken").css({"height":wh,"width":ww});
+        $("#centered").css({"margin-top":wh/2-150});
+    });
+
+</script>
+
+
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        background: url(img/landing_background.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .row{
+        height: inherit;
+        padding: 0;
+        margin: 0;
+    }
+    .col-md-12{
+        width: 100%;
+        height: 100%;
+    }
+    .col-md-6{
+        height:inherit;
+        text-align:center;
+    }
+    h1{
+        font-size: 5em;
+    }
+    h3{
+        font-size: 2em;
+        margin:1em;
+    }
+    a{
+        margin: 2em;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        background-color: grey;
+        padding: 0.5em;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 5px;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #47bd49;
+    }
+    h1,h3{
+        color:white;
+        font-weight: bold;
+    }
+    #darken{
+        background-color: black;
+        position: absolute;
+        opacity: 0.4;
+    }
+    #gitlink{
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        right: 0;
+        margin: 1em;
+    }
+    #gitlink a {
+        margin: initial;
+        background: none;
+    }
+    #gitlink p {
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        line-height: 3.5em;
+        padding: 0;
+        margin: 0;
+        margin-right: 1em;
+    }
+
+    @media screen and (max-width:1370px){
+        a{
+            margin:0em;
+            font-size:1.7em;
+        }
+    }
+</style>
+</html>
